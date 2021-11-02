@@ -6,6 +6,7 @@ rvshare = "https://yazing.com/deals/rvshare/saverneo";
 adrenaline = "https://yazing.com/go/33961872/saverneo";
 flyingblue = "https://yazing.com/go/19565839/saverneo";
 airportlax = "https://yazing.com/go/41770163/saverneo";
+airportparkingreservations = "https://yazing.com/deals/airportparkingreservations/saverneo";
 
 $(function () {
 
@@ -18,7 +19,7 @@ $(function () {
             case "rvshare" : window.location.href= rvshare;break;
             case "adrenaline" : window.location.href= adrenaline;break;
             case "flyingblue" : window.location.href= flyingblue;break;
-            case "airportlax" : window.location.href= flyingblue;break;
+            case "airportparkingreservations" : window.location.href= airportparkingreservations;break;
             default:break;
         }
     });
