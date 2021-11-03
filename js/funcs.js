@@ -21,6 +21,7 @@ $(function () {
             case "rvshare" : window.location.href= rvshare;break;
             case "adrenaline" : window.location.href= adrenaline;break;
             case "flyingblue" : window.location.href= flyingblue;break;
+            case "airportlax" : window.location.href= airportlax;break;
             case "airportparkingreservations" : window.location.href= airportparkingreservations;break;
             case "airportparking" : window.location.href= airportparking;break;
             case "airportrentalcars" : window.location.href= airportrentalcars;break;
