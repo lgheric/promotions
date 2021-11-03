@@ -1,4 +1,4 @@
-//
+//urls
 flighthub = "https://www.flighthub.com/?campaign=371&utm_campaign=Yazing&utm_content=2179451-2639103&utm_medium=affiliate&utm_source=cj&cjevent=1ce6b21c357311ec83ab75600a1c0e12";
 travelocity = "https://yazing.com/deals/travelocity/saverneo";
 clearme = "https://yazing.com/deals/clearme/saverneo";
@@ -9,6 +9,8 @@ airportlax = "https://yazing.com/go/41770163/saverneo";
 airportparkingreservations = "https://yazing.com/deals/airportparkingreservations/saverneo";
 airportparking = "https://yazing.com/deals/airportparking/saverneo";
 airportrentalcars = "https://yazing.com/deals/airportrentalcars/saverneo";
+alamo = "https://yazing.com/deals/alamo/saverneo";
+alaskaairmiles = "https://yazing.com/go/19726622/saverneo";
 
 $(function () {
 
@@ -25,6 +27,8 @@ $(function () {
             case "airportparkingreservations" : window.location.href= airportparkingreservations;break;
             case "airportparking" : window.location.href= airportparking;break;
             case "airportrentalcars" : window.location.href= airportrentalcars;break;
+            case "alamo" : window.location.href= alamo;break;
+            case "alaskaairmiles" : window.location.href= alaskaairmiles;break;
             default:break;
         }
     });
