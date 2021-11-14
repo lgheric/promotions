@@ -17,7 +17,6 @@
     .columns:nth-child(2) {margin-top: -10rem;}
     .columns:nth-child(3) {margin-top: -10rem;}
     .columns:nth-child(4) {margin-top: -10rem;}
-
     </style>
   </head>
   <body>
@@ -386,7 +385,7 @@
     </footer>
 
     <script src="./js/jquery-3.5.1.min.js"></script>
-    <script src="./js/funcs.js?v=1.0.6"></script>
+    <script src="./js/funcs.js?v=1.0.7"></script>
     <script src="./js/pullUp.js"></script>
 
     <script>
@@ -395,7 +394,7 @@
       function pullUpLoad() {
         $('#pullUpText').css("display","block");
         if(page <= totalPage){
-          $.get(page+'.html?v=1.0', function(data){
+          $.get(page+'.html?v=1.1', function(data){
             page++;
             $("#refreshContainer").append(data);
             //css
