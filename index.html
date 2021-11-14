@@ -395,7 +395,7 @@
       function pullUpLoad() {
         $('#pullUpText').css("display","block");
         if(page <= totalPage){
-          $.get(page+'.html', function(data){
+          $.get(page+'.html?v=1.0', function(data){
             page++;
             $("#refreshContainer").append(data);
             //css

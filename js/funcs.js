@@ -12,6 +12,7 @@ airportrentalcars = "https://yazing.com/deals/airportrentalcars/saverneo";
 alamo = "https://yazing.com/deals/alamo/saverneo";
 alaskaairmiles = "https://yazing.com/go/19726622/saverneo";
 accorhotels = "https://yazing.com/deals/accorhotels/saverneo";
+anantara = "https://yazing.com/deals/anantara/saverneo";
 
 $(function () {
 
@@ -31,7 +32,8 @@ $(function () {
             case "alamo" : window.location.href= alamo;break;
             case "alaskaairmiles" : window.location.href= alaskaairmiles;break;
             case "accorhotels" : window.location.href= accorhotels;break;
-            default:console.log($(this));break;
+            case "anantara" : window.location.href= anantara;break;
+            default:break;
         }
     });
 
