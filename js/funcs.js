@@ -11,10 +11,11 @@ airportparking = "https://yazing.com/deals/airportparking/saverneo";
 airportrentalcars = "https://yazing.com/deals/airportrentalcars/saverneo";
 alamo = "https://yazing.com/deals/alamo/saverneo";
 alaskaairmiles = "https://yazing.com/go/19726622/saverneo";
+accorhotels = "https://yazing.com/deals/accorhotels/saverneo";
 
 $(function () {
 
-    $("div").click(function () {
+    $("body").on("click","div",function () {
         //$(this)表示当前点击的标签
         switch($(this).attr("data-target")){
             case "flighthub" : window.location.href= flighthub;break;
@@ -29,7 +30,8 @@ $(function () {
             case "airportrentalcars" : window.location.href= airportrentalcars;break;
             case "alamo" : window.location.href= alamo;break;
             case "alaskaairmiles" : window.location.href= alaskaairmiles;break;
-            default:break;
+            case "accorhotels" : window.location.href= accorhotels;break;
+            default:console.log($(this));break;
         }
     });
 
