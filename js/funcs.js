@@ -14,6 +14,9 @@ alaskaairmiles = "https://yazing.com/go/19726622/saverneo";
 accorhotels = "https://yazing.com/deals/accorhotels/saverneo";
 anantara = "https://yazing.com/deals/anantara/saverneo";
 applevacations = "https://yazing.com/deals/applevacations/saverneo";
+aria = "https://yazing.com/go/38091451/saverneo";
+ascend = "https://yazing.com/deals/ascend/saverneo";
+atlantis = "https://yazing.com/deals/atlantis/saverneo";
 
 $(function () {
 
@@ -35,6 +38,9 @@ $(function () {
             case "accorhotels" : window.location.href= accorhotels;break;
             case "anantara" : window.location.href= anantara;break;
             case "applevacations" : window.location.href= applevacations;break;
+            case "aria" : window.location.href= aria;break;
+            case "ascend" : window.location.href= ascend;break;
+            case "atlantis" : window.location.href= atlantis;break;
             default:break;
         }
     });

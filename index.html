@@ -47,7 +47,7 @@
           <div class="card is-shady">
             <div class="card-image">
               <figure class="image is-4by3">
-                <img src="./images/flighthub.jpg?" alt="flighthub deals" class="modal-button" >
+                <img src="./images/flighthub.jpg" alt="flighthub deals" class="modal-button" >
               </figure>
             </div>
             <div class="card-content">
@@ -64,7 +64,7 @@
           <div class="card is-shady">
             <div class="card-image">
               <figure class="image is-4by3">
-                <img src="./images/travelocity.jpg?" alt="travelocity deals" >
+                <img src="./images/travelocity.jpg?v=1" alt="travelocity deals" >
               </figure>
             </div>
             <div class="card-content">
@@ -385,7 +385,7 @@
     </footer>
 
     <script src="./js/jquery-3.5.1.min.js"></script>
-    <script src="./js/funcs.js?v=1.0.7"></script>
+    <script src="./js/funcs.js?v=1.0.8"></script>
     <script src="./js/pullUp.js"></script>
 
     <script>
@@ -394,7 +394,7 @@
       function pullUpLoad() {
         $('#pullUpText').css("display","block");
         if(page <= totalPage){
-          $.get(page+'.html?v=1.1', function(data){
+          $.get(page+'.html?v=1.2', function(data){
             page++;
             $("#refreshContainer").append(data);
             //css
