@@ -17,6 +17,9 @@ applevacations = "https://yazing.com/deals/applevacations/saverneo";
 aria = "https://yazing.com/go/38091451/saverneo";
 ascend = "https://yazing.com/deals/ascend/saverneo";
 atlantis = "https://yazing.com/deals/atlantis/saverneo";
+autoeurope = "https://yazing.com/deals/autoeurope/saverneo";
+avianca = "https://yazing.com/go/38311356/saverneo";
+avidhotels = "https://yazing.com/go/35083603/saverneo";
 
 $(function () {
 
@@ -41,6 +44,9 @@ $(function () {
             case "aria" : window.location.href= aria;break;
             case "ascend" : window.location.href= ascend;break;
             case "atlantis" : window.location.href= atlantis;break;
+            case "autoeurope" : window.location.href= autoeurope;break;
+            case "avianca" : window.location.href= avianca;break;
+            case "avidhotels" : window.location.href= avidhotels;break;
             default:break;
         }
     });

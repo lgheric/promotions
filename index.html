@@ -259,8 +259,8 @@
       </div>
     </section>
 
-    <div id="pullUpText" class="box cta" style="display: none">
-      <p id="pullDownText" class="has-text-centered" >loading...</p>
+    <div id="pullUpText" class="box cta" style="display: none;margin-top: -3rem;margin-bottom: 5rem;">
+      <p class="has-text-centered" >loading...</p>
     </div>
 
     <footer>
@@ -385,30 +385,28 @@
     </footer>
 
     <script src="./js/jquery-3.5.1.min.js"></script>
-    <script src="./js/funcs.js?v=1.0.8"></script>
-    <script src="./js/pullUp.js"></script>
+    <script src="./js/funcs.js?v=1.0.9"></script>
+    <script src="./js/pullUp.js?v=1.0.0"></script>
 
     <script>
       let totalPage = 2;
       let page = 2;
       function pullUpLoad() {
-        $('#pullUpText').css("display","block");
-        if(page <= totalPage){
-          $.get(page+'.html?v=1.2', function(data){
+        if(page<=totalPage){
+          $.get(page+'.html?v=1.3', function(data){
             page++;
             $("#refreshContainer").append(data);
+
             //css
             $( ".columns" ).each(function( index ) {
               if(index > 4){
                 $(".columns:nth-child("+index+")").css("margin-top","-10rem");
               }
             });
+
           });
         }
-        if(page>totalPage) {
-          $('#pullUpText').css("display","none");
-        }
-
+        $('#pullUpText').css("display","none");
       }
 
     </script>

@@ -41,28 +41,27 @@ function getScrollHeight() {
 const throttle = function (method, context) {
     clearTimeout(method.timeId);
     method.timeId = setTimeout(function () {
-        console.log("Loading");
+        //console.log("Loading");
         method.call(context);
     }, 300);
 };
 
 
 // 模拟获取数据
-// function fetchData() {
-//     setTimeout(function() {
-//         pullUpLoad()
-//     }, 1000);
-// }
-
 function fetchData() {
-    pullUpLoad()
-}
+    setTimeout(function() {
+         pullUpLoad()
+     }, 500);
+ }
 
 window.onscroll = function() {
-    //console.log(getScrollHeight()+ " - (" + getScrollTop() + " + " +  getClientHeight() +" ) = " + (getScrollHeight() - (getScrollTop() + getClientHeight())) );
     if (getScrollHeight() - (getScrollTop() + getClientHeight()) < preloadDistance) {
-        //pullUpTextEle.innerText = 'Loading...';
-        throttle(fetchData);
+        //console.log("page="+page+" totalPage="+totalPage);
+        if(page<=totalPage){
+            //pullUpTextEle.innerText = 'Loading...';
+            $('#pullUpText').css("display","block");
+            throttle(fetchData);
+        }
     }
 };
 
