@@ -20,6 +20,9 @@ atlantis = "https://yazing.com/deals/atlantis/saverneo";
 autoeurope = "https://yazing.com/deals/autoeurope/saverneo";
 avianca = "https://yazing.com/go/38311356/saverneo";
 avidhotels = "https://yazing.com/go/35083603/saverneo";
+avis = "https://yazing.com/deals/avis/saverneo";
+backwoods = "https://yazing.com/deals/backwoods/saverneo";
+ballys_las_vegas = "https://yazing.com/deals/ballys-las-vegas/saverneo";
 
 $(function () {
 
@@ -47,6 +50,9 @@ $(function () {
             case "autoeurope" : window.location.href= autoeurope;break;
             case "avianca" : window.location.href= avianca;break;
             case "avidhotels" : window.location.href= avidhotels;break;
+            case "avis" : window.location.href= avis;break;
+            case "backwoods" : window.location.href= backwoods;break;
+            case "ballys_las_vegas" : window.location.href= ballys_las_vegas;break;
             default:break;
         }
     });
